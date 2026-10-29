@@ -4,54 +4,248 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#EEEFE6">
-  <title>Delete your Mission Khaki account</title>
-  <meta name="description" content="Delete your Mission Khaki account in the app, or request deletion by email without reinstalling it. Learn what is deleted and what security records remain.">
-  <link rel="icon" type="image/png" href="assets/img/icon-64.png">
+  <title>Delete your AxomQuest account — AxomQuest</title>
+  <meta name="description" content="Delete your AxomQuest account in the app, or request deletion by email without reinstalling it. Learn what data is deleted, what security records remain, and how to cancel Google Play subscriptions.">
+  <meta name="robots" content="index,follow">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/img/icon-64.png">
+  <link rel="apple-touch-icon" href="assets/img/app-icon-touch.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body class="page-legal">
   <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ NAV ============ -->
   <header class="nav">
     <div class="container nav-inner">
-      <a class="brand" href="index.html"><span class="brand-text">Mission<span class="brand-khaki">Khaki</span></span></a>
-      <nav aria-label="Primary"><a href="privacy.html">Privacy policy</a></nav>
+      <a class="brand" href="index.html">
+        <svg class="brand-mark" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <circle cx="12" cy="12" r="8.5"/>
+          <path d="M12 1.5v5M12 17.5v5M1.5 12h5M17.5 12h5"/>
+          <circle cx="12" cy="12" r="1.6" fill="currentColor" stroke="none"/>
+        </svg>
+        <span class="brand-text">Axom<span class="brand-khaki">Quest</span></span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html#features">Features</a>
+        <a href="index.html#mocks">Mocks</a>
+        <a href="index.html#pro">Pro</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+
+      <div class="nav-cta-wrap">
+        <a class="nav-cta" href="https://play.google.com/store/apps/details?id=com.rupjyoti.missionkhaki" rel="noopener">Get the app</a>
+        <details class="site-menu">
+          <summary aria-label="Open menu">Menu</summary>
+          <div class="menu-panel">
+            <a href="index.html#features">Features</a>
+            <a href="index.html#mocks">Mocks</a>
+            <a href="index.html#pro">Pro</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="delete-account.html" aria-current="page">Delete Account</a>
+            <a href="https://play.google.com/store/apps/details?id=com.rupjyoti.missionkhaki" rel="noopener">Get the app</a>
+          </div>
+        </details>
+      </div>
     </div>
   </header>
+
   <main id="main" class="legal" tabindex="-1">
     <div class="container legal-inner">
       <header class="legal-head">
-        <a class="back-link" href="index.html">Back to home</a>
+        <a class="back-link" href="index.html">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M15 5l-7 7 7 7"/>
+          </svg>
+          Back to home
+        </a>
         <p class="disc-tag">Account deletion</p>
-        <h1>Delete your Mission Khaki account</h1>
-        <p class="legal-intro">You can delete your account whether you use the free app or have purchased Premium. You can also request deletion without opening or reinstalling the app.</p>
+        <h1>Delete your AxomQuest account</h1>
+        <p class="legal-updated">Last updated: <time datetime="2026-10-29">29 October 2026</time></p>
+        <p class="legal-intro">
+          AxomQuest (formerly Mission Khaki) allows you to delete your account and associated cloud data at any time, whether you use the free tier or subscribe to AxomQuest Pro. You can delete your account from within the app or request deletion via email without reinstalling the app.
+        </p>
       </header>
+
+      <nav class="legal-toc" aria-label="On this page">
+        <span class="toc-label">On this page</span>
+        <ol>
+          <li><a href="#app-deletion">Delete in the app</a></li>
+          <li><a href="#external-request">Request deletion without the app</a></li>
+          <li><a href="#deleted-data">What is deleted</a></li>
+          <li><a href="#device-data">Device-local data</a></li>
+          <li><a href="#retained-data">Minimal security records retained</a></li>
+          <li><a href="#subscriptions">Important: Google Play subscriptions</a></li>
+        </ol>
+      </nav>
+
       <article class="legal-body">
-        <section aria-labelledby="app-deletion">
-          <h2 id="app-deletion">Delete in the app</h2>
-          <p>In Mission Khaki 2.5.0 or later, open the account menu on Home, choose <strong>Account settings</strong>, then <strong>Delete account</strong>. Read the confirmation and confirm your identity with your Google account or current email password.</p>
-          <p>After successful deletion, the app signs you out. A connection or verification failure is shown as an error, not as completed deletion. Retry if prompted. Accounts that cannot confirm their sign-in can use the email request below.</p>
+        <section id="app-deletion" aria-labelledby="app-deletion-title">
+          <h2 id="app-deletion-title">1. Delete in the app</h2>
+          <p>
+            In the AxomQuest app (or in previous Mission Khaki versions under Account settings):
+          </p>
+          <ol>
+            <li>Open the app and navigate to <strong>Account</strong> (or <strong>Account settings</strong>).</li>
+            <li>Select <strong>Delete account</strong>.</li>
+            <li>Re-authenticate with your sign-in method (Google Sign-In or your account email) to verify account ownership.</li>
+            <li>Review the confirmation notice, type <strong>DELETE</strong> when prompted, and confirm.</li>
+          </ol>
+          <p>
+            Upon successful verification, the app deletes your cloud identity and signs you out. If a network interruption occurs, the app reports an incomplete status so you can retry safely.
+          </p>
         </section>
-        <section aria-labelledby="external-request">
-          <h2 id="external-request">Cannot access the app?</h2>
-          <p>Email <a href="mailto:contact.rupjyoti26@gmail.com?subject=Mission%20Khaki%20account%20deletion">contact.rupjyoti26@gmail.com</a> with the subject <strong>Mission Khaki account deletion</strong>. Include the email used for your Mission Khaki sign-in, or your legacy sign-in phone number if applicable, and state that you want your account and associated data deleted.</p>
-          <p><a href="mailto:contact.rupjyoti26@gmail.com?subject=Mission%20Khaki%20account%20deletion">Email a deletion request</a></p>
-          <p>The link opens your email app; the request is sent only when you send the email. You can copy the address into any email service. You do not need to reinstall Mission Khaki. Do not send your password, verification codes, card details or purchase tokens.</p>
-          <p>We verify account ownership before deleting data, ask for clarification if needed, and confirm completion by email. Requests are typically processed within 30 days after ownership verification. A received or pending request is not completed deletion.</p>
+
+        <section id="external-request" aria-labelledby="external-request-title">
+          <h2 id="external-request-title">2. Request deletion without the app</h2>
+          <p>
+            If you have uninstalled the app, switched devices, or cannot access your phone, you do not need to reinstall AxomQuest:
+          </p>
+          <ul>
+            <li>
+              Send an email to <a href="mailto:contact.rupjyoti26@gmail.com?subject=AxomQuest%20Account%20Deletion%20Request"><strong>contact.rupjyoti26@gmail.com</strong></a> with the subject <strong>AxomQuest Account Deletion Request</strong>.
+            </li>
+            <li>
+              Include the email address associated with your AxomQuest account (or your legacy sign-in phone number if you previously registered under Mission Khaki).
+            </li>
+            <li>
+              State clearly that you request the permanent deletion of your account and associated personal data.
+            </li>
+          </ul>
+          <p>
+            <strong>Security Notice:</strong> Never send your password, verification codes, OTPs, UPI/bank details, or purchase tokens to our support team. We will never ask for them.
+          </p>
+          <p>
+            We verify account ownership before deleting data, ask for clarification if needed, and confirm completion by email. Verified external requests are typically processed within <strong>30 days</strong>. Submitting a request is not completed deletion until ownership verification succeeds.
+          </p>
         </section>
-        <section aria-labelledby="deleted-data">
-          <h2 id="deleted-data">What is deleted</h2>
-          <p>We delete your Firebase Authentication account, application-owned cloud profile and its associated records, and your leaderboard entries. This includes the account’s Premium grant. The app clears its UID-scoped session and entitlement cache after successful in-app deletion.</p>
-          <p>Device-only study progress, bookmarks and goals are shared local app data without a provable account owner. Account deletion does not erase these across accounts; clear app storage or uninstall to remove them from your device. Uninstalling alone does not delete your cloud account.</p>
+
+        <section id="deleted-data" aria-labelledby="deleted-data-title">
+          <h2 id="deleted-data-title">3. What is deleted</h2>
+          <p>
+            When your account is deleted, we permanently remove:
+          </p>
+          <ul>
+            <li>Your <strong>Firebase Authentication identity</strong> (your account credentials and identifier).</li>
+            <li>Any <strong>application-owned cloud profile records</strong> associated with your account UID.</li>
+            <li>Active server-side <strong>entitlement projections</strong> granting Pro access.</li>
+          </ul>
+          <p>
+            Deleting an account ends linked Pro membership on that account. A retired purchase cannot automatically unlock a newly created account through Restore.
+          </p>
         </section>
-        <section aria-labelledby="retained-data">
-          <h2 id="retained-data">Minimal security records retained</h2>
-          <p>For a purchased account, we keep only one-way purchase-token fingerprints and a retired flag to prevent the same purchase being claimed again after deletion. These records contain no account UID, name, email, phone number, raw purchase token or payment-card information.</p>
-          <p>A separate minimal deletion-status record uses the former Firebase UID and completion time to block stale sessions from recreating deleted account data. It contains no name, email or phone number. If deletion fails, it records the cleanup stage so the same deletion can be retried safely.</p>
-          <p>Deleting your account permanently ends its linked Premium access. Its retired purchase cannot automatically unlock a new account through Restore. Account deletion does not delete Google Play’s own transaction records or issue a refund. Contact the support address above if you need help.</p>
-          <p>These minimal records are retained for fraud prevention and transaction integrity. See the <a href="privacy.html#retention">privacy policy’s deletion section</a> for the same disclosure and information about provider backups.</p>
+
+        <section id="device-data" aria-labelledby="device-data-title">
+          <h2 id="device-data-title">4. Device-local data</h2>
+          <p>
+            In AxomQuest, your completed mock test attempts, scores, question bookmarks, history, and user preferences are stored <strong>locally on your device</strong>, partitioned by user account.
+          </p>
+          <p>
+            Because this study data is stored on your device rather than a shared cloud server, deleting your cloud account does not automatically wipe local files on your physical device. To remove local study data from your device:
+          </p>
+          <ul>
+            <li>Go to your phone’s <strong>Android Settings → Apps → AxomQuest → Storage &amp; cache → Clear storage</strong>; or</li>
+            <li>Uninstall the AxomQuest application from your device.</li>
+          </ul>
+        </section>
+
+        <section id="retained-data" aria-labelledby="retained-data-title">
+          <h2 id="retained-data-title">5. Minimal security records retained</h2>
+          <p>
+            To prevent fraud, avoid purchase replay, and meet tax and legal integrity obligations, minimal pseudonymous records may be retained:
+          </p>
+          <ul>
+            <li>
+              <strong>Purchase Integrity Records:</strong> For paid accounts, we retain one-way hashed purchase-token fingerprints with a retired flag. These records contain no account UID, name, email address, phone number, raw purchase token, card number, or banking details.
+            </li>
+            <li>
+              <strong>Deletion Status Records:</strong> A minimal deletion-status log keyed to the former pseudonymous identifier records completion time or any incomplete cleanup stage, blocking stale sessions from resurrecting deleted records and permitting safe cleanup retries.
+            </li>
+          </ul>
+          <p>
+            These minimal records are retained strictly for security, fraud prevention, and transaction verification. Google may also retain copies of transaction data in its own Google Play billing systems as governed by Google’s privacy terms.
+          </p>
+        </section>
+
+        <section id="subscriptions" aria-labelledby="subscriptions-title">
+          <h2 id="subscriptions-title">6. Important: Google Play subscriptions</h2>
+          <p>
+            <strong>Deleting your AxomQuest account or uninstalling the app does NOT cancel your Google Play recurring subscription or issue a refund.</strong>
+          </p>
+          <p>
+            Google Play manages recurring billing independently. If you have an active AxomQuest Pro monthly subscription, you must cancel it in Google Play before deleting your account to prevent future billing:
+          </p>
+          <ol>
+            <li>Open the <strong>Google Play Store</strong> app on your Android device.</li>
+            <li>Tap your <strong>Profile icon</strong> at the top right corner.</li>
+            <li>Tap <strong>Payments &amp; subscriptions</strong>, then tap <strong>Subscriptions</strong>.</li>
+            <li>Select <strong>AxomQuest</strong> from your list of subscriptions.</li>
+            <li>Tap <strong>Cancel subscription</strong> and follow the on-screen instructions.</li>
+          </ol>
+          <p>
+            Subscription payments are generally non-refundable upon cancellation. Cancelling stops future renewals, and Pro access continues until the end of the current paid billing period, subject to Google Play's policies and applicable law.
+          </p>
         </section>
       </article>
     </div>
   </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <svg class="brand-mark" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <circle cx="12" cy="12" r="8.5"/>
+            <path d="M12 1.5v5M12 17.5v5M1.5 12h5M17.5 12h5"/>
+            <circle cx="12" cy="12" r="1.6" fill="currentColor" stroke="none"/>
+          </svg>
+          <span class="brand-text">Axom<span class="brand-khaki">Quest</span></span>
+        </a>
+        <p>Online mock tests for Assam Police, ADRE, SSC and Defence exams. Free practice on core mocks. AxomQuest Pro subscription at ₹99/month.</p>
+        <p class="footer-disc">Independent app — not affiliated with any government or defence organisation.</p>
+      </div>
+
+      <nav class="footer-col" aria-label="Site">
+        <h3>Site</h3>
+        <a href="index.html#features">Features</a>
+        <a href="index.html#mocks">Mocks</a>
+        <a href="index.html#pro">Pro</a>
+      </nav>
+
+      <nav class="footer-col" aria-label="Legal">
+        <h3>Legal</h3>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="delete-account.html" aria-current="page">Delete Account</a>
+        <a href="mailto:contact.rupjyoti26@gmail.com">Contact</a>
+      </nav>
+
+      <div class="footer-col">
+        <h3>Get the app</h3>
+        <a class="btn btn-primary btn-sm" href="https://play.google.com/store/apps/details?id=com.rupjyoti.missionkhaki" rel="noopener">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+            <path d="M4 3.5v17c0 .61.66.99 1.18.68l14.6-8.5a.8.8 0 0 0 0-1.38L5.18 2.82A.8.8 0 0 0 4 3.5Z"/>
+          </svg>
+          Google Play
+        </a>
+        <p class="footer-fine">Android 8.0 or newer<br>Package: com.rupjyoti.missionkhaki</p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 AxomQuest. All rights reserved.</p>
+      <p>Made for aspirants in India.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>

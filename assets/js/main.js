@@ -392,7 +392,7 @@
   /* ---------- WhatsApp share: append the live page URL at runtime ---------- */
   var waShare = document.getElementById('wa-share');
   if (waShare) {
-    var waText = 'Mission Khaki — free mock tests for Army, Police, SSC & CAPF aspirants. Real negative marking, EN/HI/ASM in-test. Premium is a one-time payment, no subscription.';
+    var waText = 'AxomQuest — online mock tests with real negative marking, section scores & language switch. 30 free mocks, upgrade to Pro for 100+ mocks.';
     waShare.setAttribute('href', 'https://wa.me/?text=' + encodeURIComponent(waText + ' ' + window.location.href));
   }
 
@@ -404,8 +404,8 @@
     var quizFeedback = quiz.querySelector('.quiz-feedback');
     var quizReset = quiz.querySelector('.quiz-reset');
     var quizCta = quiz.querySelector('.quiz-cta');
-    var EXPLAIN_OK = 'Correct — Doom Dum (Sindora tomentosa) is the State Tree of Assam.';
-    var EXPLAIN_NO = 'Not quite — the State Tree of Assam is Doom Dum (Sindora tomentosa).';
+    var EXPLAIN_OK = 'Correct — Hollong (Dipterocarpus macrocarpus) is the State Tree of Assam.';
+    var EXPLAIN_NO = 'Not quite — the State Tree of Assam is Hollong (Dipterocarpus macrocarpus).';
     var NOTE_OK = 'No penalty here — but in the app, every wrong answer still costs you −0.25.';
     var NOTE_NO = 'In the real paper, a wrong answer costs you −0.25. That is exactly how the app scores you.';
 

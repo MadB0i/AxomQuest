@@ -1,37 +1,23 @@
-# Mission Khaki — Marketing Website
+# AxomQuest — Official Website
 
-A static marketing site for the **Mission Khaki** Android exam-prep app
-(Army Agniveer, Assam Police, SSC, CAPF aspirants). Plain HTML/CSS/JS —
-**no build step, no npm, no bundler** — deploys directly to GitHub Pages.
+A static marketing and legal website for **AxomQuest** (formerly Mission Khaki), an Android competitive-exam preparation app (Assam Police, ADRE, SSC, Defence and CAPF aspirants). Plain HTML/CSS/JS — **no build step, no npm, no bundler** — deploys directly to GitHub Pages.
 
-- **Live site:** https://MadB0i.github.io/Mission_Khaki/
+- **Live site:** https://madb0i.github.io/Mission_Khaki/
 - **Google Play:** https://play.google.com/store/apps/details?id=com.rupjyoti.missionkhaki
 
 ## About the app
 
-**Mission Khaki** is a free Android app for defence and government-job
-exam preparation. It offers full-length mock tests with real negative
-marking, section-wise score breakdowns (GK / Maths / Reasoning / English),
-and instant English / Hindi / Assamese translation in the middle of a test —
-for Army Agniveer, Assam Police (SI / Constable), SSC (GD / CHSL / MTS / CGL)
-and CAPF (CRPF / BSF / CISF / ITBP / SSB) aspirants.
+**AxomQuest** is an Android app for competitive examination preparation. It features 108 online mock tests with authentic negative marking, section-wise score analytics (GK / Maths / Reasoning / English), and instant English / Hindi / Assamese question translation during tests.
 
-Mock tests are free (ad-supported). Premium is a **one-time purchase**
-— Grand Mocks (100-question papers) and study notes, for life. No subscription.
+- **Free Tier:** 30 full-length online mocks (Mocks 001–030) and Daily 10 practice are completely free (ad-supported).
+- **AxomQuest Pro:** An optional monthly auto-renewing subscription at ₹99/month (for India) through Google Play Billing unlocking premium mocks (031–108) with an ad-free experience.
+- **Historical Lifetime Rights:** Existing users with historical one-time purchases (`mission_khaki_one_time_pro`) retain full access to premium mocks without paying a subscription.
 
-> Mission Khaki is an independent, privately developed app. The site clearly
-> states (hero, mid-page disclosure band, footer) that it is **not affiliated
-> with any government or defence organisation** — keep these visible; they are
-> also required for an honest Google Play listing.
+> **Independent Developer Disclosure:** AxomQuest is an independent, privately developed app. The site clearly states that it is **not affiliated with, endorsed by, or connected to any government or defence organisation**.
 
-## Play Console notes
+## Google Play Compliance Notes
 
-- **Data safety form:** point the “Privacy policy” field at your
-  `privacy.html` URL. The page already covers the four required categories:
-  Firebase Auth (account info), Firestore (progress/scores), Google Play
-  Billing (purchase data, no card details), and AdMob (advertising data).
-- **Target audience:** 13+ (stated in both policy pages).
-- **Non-affiliation:** the “not affiliated with any government/defence
-  organisation” statement appears on the landing page and in both legal
-  docs — don’t remove it; Google checks listings for misleading claims of
-  endorsement, and your app is independent.
+- **Privacy Policy:** Points directly to `privacy.html`. Discloses Firebase Authentication, device-local study attempts (UID-scoped), Google Play Billing, Cloud Firestore online catalog delivery, planned Cloudflare Workers/D1 verification, and AdMob/UMP consent.
+- **Account Deletion:** Web deletion request URL points to `delete-account.html`. Explains in-app deletion, owner-operated email request pathway, cloud deletion versus local device data, and provides direct instructions to cancel Google Play subscriptions before deleting an account.
+- **Target Audience:** 18 and older (aligned with Google Play Console declarations).
+- **Non-Affiliation:** Independent app status is prominently displayed on the landing page and all legal documents.
