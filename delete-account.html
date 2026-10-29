@@ -157,18 +157,18 @@
         <section id="retained-data" aria-labelledby="retained-data-title">
           <h2 id="retained-data-title">5. Minimal security records retained</h2>
           <p>
-            To prevent fraud, avoid purchase replay, and meet tax and legal integrity obligations, minimal pseudonymous records may be retained:
+            To prevent fraud, avoid duplicate purchase claims, and meet tax and legal obligations, minimal non-personal records are retained:
           </p>
           <ul>
             <li>
-              <strong>Purchase Integrity Records:</strong> For paid accounts, we retain one-way hashed purchase-token fingerprints with a retired flag. These records contain no account UID, name, email address, phone number, raw purchase token, card number, or banking details.
+              <strong>Purchase Integrity Records:</strong> Minimal transaction references and status flags are retained to confirm past transactions and prevent abuse. These records contain no personal names, passwords, phone numbers, or credit/debit card numbers.
             </li>
             <li>
-              <strong>Deletion Status Records:</strong> A minimal deletion-status log keyed to the former pseudonymous identifier records completion time or any incomplete cleanup stage, blocking stale sessions from resurrecting deleted records and permitting safe cleanup retries.
+              <strong>Deletion Status Records:</strong> A minimal log records that deletion was completed, preventing old sessions from recreating deleted profiles.
             </li>
           </ul>
           <p>
-            These minimal records are retained strictly for security, fraud prevention, and transaction verification. Google may also retain copies of transaction data in its own Google Play billing systems as governed by Google’s privacy terms.
+            These minimal records are retained strictly for security, fraud prevention, and transaction verification. Google Play also maintains its own transaction records subject to Google’s privacy policy.
           </p>
         </section>
 
@@ -234,7 +234,7 @@
           </svg>
           Google Play
         </a>
-        <p class="footer-fine">Android 8.0 or newer<br>Package: com.rupjyoti.missionkhaki</p>
+        <p class="footer-fine">Android 8.0 or newer<br>Available on Google Play</p>
       </div>
     </div>
 
