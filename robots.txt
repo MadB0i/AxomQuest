@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://madb0i.github.io/Mission_Khaki/sitemap.xml
+Sitemap: https://madb0i.github.io/AxomQuest/sitemap.xml
