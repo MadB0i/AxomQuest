@@ -1,5 +1,5 @@
 /* ============================================================
-   MISSION KHAKI — shared JS
+   AXOMQUEST — shared JS
    Every enhancement is optional: no JS, a blocked CDN, or
    prefers-reduced-motion all leave the page fully readable.
    ============================================================ */

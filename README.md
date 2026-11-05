@@ -1,6 +1,6 @@
 # AxomQuest — Official Website
 
-A static marketing and legal website for **AxomQuest** (formerly Mission Khaki), an Android competitive-exam preparation app (Assam Police, ADRE, SSC, Defence and CAPF aspirants). Plain HTML/CSS/JS — **no build step, no npm, no bundler** — deploys directly to GitHub Pages.
+A static marketing and legal website for **AxomQuest**, an Android competitive-exam preparation app for Assam Police and ADRE Grade 3 & 4 aspirants. Plain HTML/CSS/JS — **no build step, no npm, no bundler** — deploys directly to GitHub Pages.
 
 - **Live site:** https://madb0i.github.io/AxomQuest/
 - **Google Play:** https://play.google.com/store/apps/details?id=com.rupjyoti.missionkhaki

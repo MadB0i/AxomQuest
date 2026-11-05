@@ -1,44 +1,49 @@
 /* ============================================================
-   MISSION KHAKI — shared stylesheet
-   Palette: khaki-paper + deep olive ink (field-manual aesthetic)
+   AXOMQUEST — shared stylesheet
+   Brand:   AxomQuest (Variation A — River Q Evolution)
+   Palette: Forest (#173F35) + Warm Cream (#F5F0E4) + Evergreen Ink (#142823)
    Type:    Space Grotesk (display) / IBM Plex Sans (body) / IBM Plex Mono (data)
    ============================================================ */
 
 :root {
   /* paper (light surfaces) */
-  --paper:      #EEEFE6;
-  --paper-2:    #E5E7D8;
-  --paper-3:    #DBDECB;
-  --line:       #C7CBB2;
-  --line-soft:  #D5D8C4;
+  --paper:      #FAF9F5;
+  --paper-2:    #F3EFE7;
+  --paper-3:    #E8E3D8;
+  --line:       #D6D9CC;
+  --line-soft:  #E2DFD3;
 
   /* ink (text on paper) */
-  --ink:        #1B2016;
-  --ink-soft:   #4C5340;
-  --ink-faint:  #70775F;
+  --ink:        #142823;
+  --ink-soft:   #455A51;
+  --ink-faint:  #6E8077;
 
   /* dark surfaces (hero, bands) */
-  --dark:       #161A10;
-  --dark-2:     #1E2415;
-  --line-dark:  #2C3320;
-  --on-dark:    #ECEEE1;
-  --on-dark-soft: #A6AC93;
+  --dark:       #0B1C17;
+  --dark-2:     #112821;
+  --line-dark:  rgba(245, 240, 228, 0.12);
+  --on-dark:    #F5F0E4;
+  --on-dark-soft: #B2C3BB;
 
   /* accents */
-  --olive:      #4E5C2F;  /* primary button / strong accent */
-  --olive-hi:   #5C6C38;
-  --olive-deep: #3E4A26;  /* accent text on paper */
-  --olive-lt:   #93A45C;  /* accent text on dark */
-  --khaki:      #A9AE8C;
-  --brick:      #8C4A2F;  /* semantic: negative marking only */
-  --cursor:     #6E7F49;
+  --forest:     #173F35;
+  --forest-hi:  #1F5246;
+  --olive:      #1A5345;  /* primary button / strong accent */
+  --olive-hi:   #226958;
+  --olive-deep: #173F35;  /* accent text on paper */
+  --olive-lt:   #388E7B;  /* accent text on dark */
+  --khaki:      #B2C3BB;
+  --gold:       #D4AF37;
+  --gold-warm:  #C89B3C;
+  --brick:      #A04030;  /* semantic: negative marking only */
+  --cursor:     #2A6757;
 
   --font-display: "Space Grotesk", "Segoe UI", sans-serif;
   --font-body: "IBM Plex Sans", "Segoe UI", sans-serif;
   --font-mono: "IBM Plex Mono", "Consolas", monospace;
 
   --nav-h: 72px;
-  --radius: 3px;
+  --radius: 6px;
 }
 
 /* ---------- reset / base ---------- */
@@ -305,21 +310,27 @@ html.has-cursor summary, html.has-cursor * { cursor: none !important; }
 .btn-primary {
   background: var(--olive);
   border-color: var(--olive);
-  color: #F2F3EA;
+  color: var(--on-dark);
+  box-shadow: 0 4px 14px rgba(23, 63, 53, 0.35);
 }
 .btn-primary:hover {
   background: var(--olive-hi);
   border-color: var(--olive-hi);
-  box-shadow: 4px 4px 0 rgba(27, 32, 22, 0.22);
+  box-shadow: 0 8px 24px -4px rgba(23, 63, 53, 0.55), 2px 2px 0 rgba(0, 0, 0, 0.18);
+  transform: translateY(-1px);
 }
-.btn-primary:active { box-shadow: 1px 1px 0 rgba(27, 32, 22, 0.22); }
+.btn-primary:active { box-shadow: 1px 1px 0 rgba(27, 32, 22, 0.22); transform: none; }
 
 .btn-ghost {
-  border-color: var(--ink-soft);
-  color: var(--ink);
+  border-color: rgba(245, 240, 228, 0.25);
+  color: var(--on-dark);
   background: transparent;
 }
-.btn-ghost:hover { border-color: var(--ink); background: rgba(27, 32, 22, 0.05); }
+.btn-ghost:hover {
+  border-color: var(--on-dark);
+  background: rgba(245, 240, 228, 0.06);
+  color: var(--on-dark);
+}
 
 /* animated underline link (secondary CTA) */
 .link-underline {
@@ -388,6 +399,62 @@ html.has-cursor summary, html.has-cursor * { cursor: none !important; }
   letter-spacing: 0.16em;
   color: var(--khaki);
 }
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 16px;
+  background: rgba(23, 63, 53, 0.5);
+  border: 1px solid rgba(82, 170, 140, 0.32);
+  border-radius: 999px;
+  margin-bottom: 22px;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--on-dark);
+  backdrop-filter: blur(8px);
+}
+.badge-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #38C172;
+  box-shadow: 0 0 8px #38C172;
+  animation: badge-pulse 2.4s infinite ease-in-out;
+}
+@keyframes badge-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.35; transform: scale(0.85); }
+}
+
+.hero-trust-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+  margin-top: 24px;
+}
+.trust-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: var(--on-dark-soft);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  padding: 6px 13px;
+  border-radius: 999px;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+.trust-pill:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+.trust-pill svg { color: var(--gold); flex: none; }
 
 .hero-title {
   font-family: var(--font-display);
@@ -900,10 +967,15 @@ main section[id] { scroll-margin-top: calc(var(--nav-h) + 16px); }
   letter-spacing: 0.18em;
   color: var(--olive-deep);
   border: 1px solid var(--line);
+  border-radius: 4px;
   padding: 6px 10px;
   width: max-content;
   background: var(--paper);
 }
+.exam-code--police { color: #1E6655; border-color: rgba(30, 102, 85, 0.35); background: rgba(30, 102, 85, 0.08); }
+.exam-code--adre3 { color: #8F6518; border-color: rgba(143, 101, 24, 0.35); background: rgba(143, 101, 24, 0.08); }
+.exam-code--adre4 { color: #2B6B8A; border-color: rgba(43, 107, 138, 0.35); background: rgba(43, 107, 138, 0.08); }
+.exam-code--state { color: #6F4B82; border-color: rgba(111, 75, 130, 0.35); background: rgba(111, 75, 130, 0.08); }
 .exam-name {
   font-family: var(--font-display);
   font-weight: 600;
@@ -1025,7 +1097,7 @@ main section[id] { scroll-margin-top: calc(var(--nav-h) + 16px); }
 .price-table td.is-ours { color: var(--olive-deep); }
 
 .premium-side {
-  background: var(--dark);
+  background: var(--dark-2);
   color: var(--on-dark);
   padding: clamp(28px, 3.4vw, 44px);
   display: flex;
@@ -1033,6 +1105,9 @@ main section[id] { scroll-margin-top: calc(var(--nav-h) + 16px); }
   align-items: flex-start;
   gap: 24px;
   border: 1px solid var(--line-dark);
+  border-top: 3px solid var(--gold);
+  border-radius: 10px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.25);
 }
 .premium-side .stamp { --stamp-color: var(--khaki); }
 .premium-note { color: var(--on-dark-soft); font-size: 0.95rem; line-height: 1.65; }
@@ -1047,7 +1122,9 @@ main section[id] { scroll-margin-top: calc(var(--nav-h) + 16px); }
 .quiz {
   max-width: 720px;
   border: 1px solid var(--line);
+  border-radius: 12px;
   background: var(--paper-2);
+  box-shadow: 0 8px 30px rgba(20, 40, 35, 0.05);
   padding: clamp(24px, 3.5vw, 40px);
 }
 .quiz-q {
@@ -1137,9 +1214,11 @@ main section[id] { scroll-margin-top: calc(var(--nav-h) + 16px); }
 }
 .disclaimer-card {
   border: 1px solid var(--line-dark);
-  border-left: 4px solid var(--olive-lt);
+  border-left: 4px solid var(--gold-warm);
+  border-radius: 8px;
   background: var(--dark-2);
   padding: clamp(28px, 4vw, 52px);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.22);
 }
 .disc-tag {
   font-family: var(--font-mono);
